@@ -7,6 +7,7 @@ export const GOODS: Good[] = [
     basePrice: 30,
     weight: 2,
     description: "Weißes Gold des Nordens. Unverzichtbar zur Konservierung.",
+    icon: "/assets/goods/salt.png",
   },
   {
     id: "grain",
@@ -14,6 +15,7 @@ export const GOODS: Good[] = [
     basePrice: 20,
     weight: 3,
     description: "Grundnahrungsmittel. Wird aus den Ostländern importiert.",
+    icon: "/assets/goods/grain.png",
   },
   {
     id: "cloth",
@@ -21,6 +23,7 @@ export const GOODS: Good[] = [
     basePrice: 50,
     weight: 1,
     description: "Feines flandrisches Tuch. Begehrt bei Adel und Bürgern.",
+    icon: "/assets/goods/cloth.png",
   },
   {
     id: "furs",
@@ -28,6 +31,7 @@ export const GOODS: Good[] = [
     basePrice: 80,
     weight: 1,
     description: "Wertvolle Pelze aus Russland und Skandinavien.",
+    icon: "/assets/goods/furs.png",
   },
   {
     id: "fish",
@@ -35,6 +39,7 @@ export const GOODS: Good[] = [
     basePrice: 15,
     weight: 2,
     description: "Gesalzener Hering und Stockfisch. Stapelware der Hanse.",
+    icon: "/assets/goods/fish.png",
   },
 ];
 

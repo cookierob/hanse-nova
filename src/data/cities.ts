@@ -8,6 +8,7 @@ export const CITIES: City[] = [
     x: 55,
     y: 35,
     connections: ["hamburg", "danzig"],
+    image: "/assets/cities/luebeck/panorama_day.png",
     goods: [
       { goodId: "salt", priceModifier: 0.8, supply: "high", demand: "low" },
       { goodId: "grain", priceModifier: 1.1, supply: "low", demand: "high" },

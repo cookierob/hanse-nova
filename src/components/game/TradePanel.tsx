@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useGameStore } from "@/engine/state/game-store";
 import { getCityById } from "@/data/cities";
 import { getGoodById } from "@/data/goods";
@@ -81,6 +82,18 @@ export function TradePanel() {
                 key={item.goodId}
                 className="flex flex-col md:flex-row md:items-center gap-2 p-3 bg-hanse-parchment-dark border border-hanse-wood"
               >
+                {/* Good icon */}
+                {good?.icon && (
+                  <div className="w-12 h-12 relative flex-shrink-0">
+                    <Image
+                      src={good.icon}
+                      alt={item.goodName}
+                      fill
+                      className="object-contain pixelated"
+                    />
+                  </div>
+                )}
+
                 {/* Good info */}
                 <div className="flex-1">
                   <div className="font-pixel font-bold text-hanse-ink">
