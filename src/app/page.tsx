@@ -3,6 +3,7 @@
 import { useGameStore } from "@/engine/state/game-store";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
+import { Leaderboard } from "@/components/game/Leaderboard";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
@@ -22,6 +23,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-hanse-ink to-hanse-sea">
+      <div className="flex flex-col lg:flex-row gap-6 max-w-4xl w-full items-start">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -105,9 +107,20 @@ export default function HomePage() {
 
         {/* Footer */}
         <p className="text-center font-pixel text-xs text-hanse-parchment/50 mt-4">
-          Hanse Nova MVP • 2024
+          Hanse Nova MVP • 2025
         </p>
       </motion.div>
+
+      {/* Leaderboard */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.3 }}
+        className="w-full lg:w-80"
+      >
+        <Leaderboard />
+      </motion.div>
+      </div>
     </main>
   );
 }
